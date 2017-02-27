@@ -5,12 +5,7 @@ import numpy as np
 color = (0, 187, 254) 
 cap = cv2.VideoCapture(0)
 n=300#データ数
-#cascade_path = "/Users/kenichirosakaba/anaconda/pkgs/opencv-2.4.8-np17py27_2/share/OpenCV/haarcascades/haarcascade_frontalface_alt.xml"
-#cascade_path = "/Users/kenichirosakaba/anaconda/pkgs/opencv-2.4.8-np17py27_2/share/OpenCV/haarcascades/haarcascade_frontalface_alt.xml"
-#cascade_path = "/Users/kenichirosakaba/anaconda/pkgs/opencv-2.4.8-np17py27_2/share/OpenCV/haarcascades/haarcascade_frontalface_default.xml"
-cascade_path = "/Users/kenichirosakaba/anaconda/pkgs/opencv-2.4.8-np17py27_2/share/OpenCV/haarcascades/haarcascade_frontalface_alt.xml"
-#cascade_path = "/Users/kenichirosakaba/anaconda/pkgs/opencv-2.4.8-np17py27_2/share/OpenCV/haarcascades/haarcascade_frontalface_alt2.xml"
-#cascade_path = "/Users/kenichirosakaba/anaconda/pkgs/opencv-2.4.8-np17py27_2/share/OpenCV/haarcascades/haarcascade_frontalface_alt_tree.xml"
+cascade_path = "...path.../anaconda/pkgs/opencv-2.4.8-np17py27_2/share/OpenCV/haarcascades/haarcascade_frontalface_alt.xml"
 cascade = cv2.CascadeClassifier(cascade_path)
 dir_path="face" 
 #os.mkdir(dir_path)

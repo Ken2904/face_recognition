@@ -22,12 +22,3 @@ np.savetxt("text_npy/test.txt", np.array(data),delimiter=",",fmt="%s")
 np.savetxt("text_npy/train.txt", np.array(data),delimiter=",",fmt="%s")
 np.save("text_npy/face_class", np.array(folder[1:len(folder)]))
 
-#filename=pd.DataFrame(filename)
-
-#filename.to_csv("filename.csv")
-
-#import csv
-
-#with open('some.csv', 'w') as f:
-#  writer = csv.writer(f, lineterminator=',') # 改行コード（\n）を指定しておく
-#writer.writerow(filename) # 2次元配列も書き込める

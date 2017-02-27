@@ -19,8 +19,8 @@ IMAGE_PIXELS = IMAGE_SIZE*IMAGE_SIZE*3
 
 
 # サンプル顔認識特徴量ファイル
-cascade_path = "/Users/kenichirosakaba/anaconda/pkgs/opencv-2.4.8-np17py27_2/share/OpenCV/haarcascades/haarcascade_frontalface_alt.xml" #人の場合はこっち
-#cascade_path = "/Users/kenichirosakaba/anaconda/pkgs/opencv-2.4.8-np17py27_2/share/OpenCV/lbpcascades/lbpcascade_animeface.xml" # アニメの場合はこっち
+cascade_path = "...path.../anaconda/pkgs/opencv-2.4.8-np17py27_2/share/OpenCV/haarcascades/haarcascade_frontalface_alt.xml" #人の場合はこっち
+#cascade_path = "...path.../anaconda/pkgs/opencv-2.4.8-np17py27_2/share/OpenCV/lbpcascades/lbpcascade_animeface.xml" # アニメの場合はこっち
  
 images_placeholder = tf.placeholder("float", shape=(None, IMAGE_PIXELS))
 labels_placeholder = tf.placeholder("float", shape=(None, NUM_CLASSES))
@@ -36,14 +36,8 @@ while True:
 	if __name__ == '__main__':
 		color = (0, 187, 254) 
 		cap = cv2.VideoCapture(0)
-		#cascade_path = "/Users/kenichirosakaba/anaconda/pkgs/opencv-2.4.8-np17py27_2/share/OpenCV/haarcascades/	haarcascade_frontalface_alt.xml"
-		#cascade_path = "/Users/kenichirosakaba/anaconda/pkgs/opencv-2.4.8-np17py27_2/share/OpenCV/haarcascades/haarcascade_frontalface_alt.xml"
-		#cascade_path = "/Users/kenichirosakaba/anaconda/pkgs/opencv-2.4.8-np17py27_2/share/OpenCV/haarcascades/haarcascade_frontalface_default.xml"
-		cascade_path = "/Users/kenichirosakaba/anaconda/pkgs/opencv-2.4.8-np17py27_2/share/OpenCV/haarcascades/haarcascade_frontalface_alt.xml"
-		#cascade_path = "/Users/kenichirosakaba/anaconda/pkgs/opencv-2.4.8-np17py27_2/share/OpenCV/haarcascades/haarcascade_frontalface_alt2.xml"
-		#cascade_path = "/Users/kenichirosakaba/anaconda/pkgs/opencv-2.4.8-np17py27_2/share/OpenCV/haarcascades/haarcascade_frontalface_alt_tree.xml"
+		cascade_path = "...path.../anaconda/pkgs/opencv-2.4.8-np17py27_2/share/OpenCV/haarcascades/haarcascade_frontalface_alt.xml"
 		cascade = cv2.CascadeClassifier(cascade_path)
-		#dir_path="/Users/kenichirosakaba/Dropbox/deeplearning/face_rec/face_recognization/face/" 
 		print("カメラ〜〜〜〜")
 		loop=0
 		i=0
